@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: lightgray;
+}
+
 /* regole header */
 header{
     background-color: #fff;
@@ -11,7 +15,6 @@ header{
 }
 
 main{
-    background-color: lightgrey;
     margin-top: 5%;
 }
 
@@ -98,4 +101,85 @@ li{
 
 #float{
     float: left;
+}
+
+footer{
+    margin-top: 10%;
+    background-color: blueviolet;
+    justify-content: space-between;
+}
+
+.flex nav{
+    width: 40%;
+}
+
+.flex ul{
+    justify-content: space-evenly;
+}
+
+.flex li{
+    width: 20%;
+}
+
+a{
+    color: #fff;
+}
+/* adattamento telefono */
+@media screen and (max-width: 640px){
+    
+    header{
+        width: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container{
+        margin: 0;
+    }
+
+    .vanish{
+        display: none;
+    }
+    
+    #colonna{
+        display: block;
+    }
+
+    #colonna img{
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    #lista{
+        width: 100%;
+    }
+
+    ul{
+        margin-top: 0;
+    }
+
+    .tag{
+        width: auto;
+    }
+
+    .tags{
+        justify-content: space-around; 
+    }
+    
+    #float{
+        float: none;
+        text-align: center;
+        margin: 0 15%; 
+        width: 70%;
+        height: 70%;
+    }
+
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .flex nav{
+        width: 100%;
+    }
 }
